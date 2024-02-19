@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Blog</h1>
     
-    <a href="#" [routerLink]="['/post/', 'post.id']" class="btn btn-success">CREAR POST</a>
+    <a href="#" [routerLink]="['/crear/', 'post.id']" class="btn btn-success">CREAR POST</a>
       
     <table class="table table-striped">
         <thead>
@@ -19,7 +19,7 @@
                 <td>{{ post.body }}</td>
                 <td>
                   <a href="#" [routerLink]="['/ver', post.id]" class="btn btn-info">Ver</a>
-                  <a href="#" [routerLink]="['/post/', post.id]" class="btn btn-primary">Actualizar</a>
+                  <a href="#" [routerLink]="['/actualizar', post.id]" class="btn btn-primary">Actualizar</a>
                   <button type="button" (click)="deletePost(post.id)" class="btn btn-danger">Borrar</button>
                 </td>
               </tr>
